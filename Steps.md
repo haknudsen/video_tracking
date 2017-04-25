@@ -5,11 +5,11 @@ Video SEO!
 ---- ---------
 
 #### <i class="icon-file"></i> Gather Information from Client
-> - Website
-> - YouTube Channel
-> - Keywords
-> - Script
-> - Logo
+1. Website
+2. YouTube Channel
+3. Keywords
+4. Script
+5. Logo
 
 #Stage 2
 #### <i class="icon-file"></i> Puting it together
@@ -19,11 +19,11 @@ Video SEO!
 > - Channel Art
 > - Google ID Art
 > - Spin Text
->  * Descriptions
->  * Tags
->  * Titles
->  * Signature
->  * About Us
+>   * Descriptions
+>   * Tags
+>   * Titles
+>   * Signature
+>   * About Us
 >  - End Screens
 >  - Cards
 
