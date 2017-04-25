@@ -39,6 +39,7 @@ Video SEO!
 #Stage 4
 -------------
 #### Initial SEO
+> - Videos are Scheduled for upload and changing from Unlisted to Public
 > - Loop Video
 > - Money Robot Campaign
 > -  Rank Cipher Campaign
@@ -46,8 +47,8 @@ Video SEO!
 > - GSA 301
 > - GSA Indexer
 
-#Stage 5#
-####Maintenance/Enhancement####
+#Stage 5
+####Maintenance/Enhancement
 > - Targeted on specific Keywords
 >  * Money Robot
 >  * Rank Cipher
