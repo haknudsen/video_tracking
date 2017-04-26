@@ -4,19 +4,23 @@
 <meta charset="utf-8">
 <title>Video Workflow</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css" integrity="sha256-y4TDcAD4/j5o4keZvggf698Cr9Oc7JZ+gGMax23qmVA=" crossorigin="anonymous" />
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 <script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<section class="container-fluid bg-info">
+<section class="container-fluid bg-info mb-4">
   <div class="container p-4">
     <div class="row">
-     <div class="col-8"><h1>Video SEO Workflow</h1></div>
+      <div class="col-8">
+        <h1>Video SEO Workflow</h1>
+      </div>
       <div class="col-4">
         <form>
           <div class="form-group">
@@ -34,41 +38,74 @@
   </div>
 </section>
 <section class="container">
-    <div class="row">
-        <div class="col-lg-2"><h2>Client</h2></div>
-        <div class="col-lg-2"><h2>Status</h2></div>
-        <div class="col-lg-2"><h2>Step</h2></div>
-        <div class="col-lg-2"><h2>Milestone</h2></div>
-        <div class="col-lg-2"><h2>Date</h2></div>
-        <div class="col-lg-2"><h2>Notes</h2></div>
+  <div class="row">
+    <div class="col-lg-2">
+      <h2>Client</h2>
     </div>
-    <div class="row">
-        <div class="col-lg-2"><div class="client-info" id="client">Client</div></div>
-        <div class="col-lg-2"><div class="client-info" id="status">Status</div></div>
-        <div class="col-lg-2"><div class="client-info" id="step">Step</div></div>
-        <div class="col-lg-2"><div class="client-info" id="milestone">Milestone</div></div>
-        <div class="col-lg-2"><div class="client-info" id="date">Date</div></div>
-        <div class="col-lg-2"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#clientInfoModal">Notes</button></div>
+    <div class="col-lg-2">
+      <h2>Status</h2>
     </div>
-    <div tabindex="-1" class="modal" id="clientInfoModal" role="dialog" aria-hidden="true" aria-labelledby="clientInfoModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="clientInfoModalLabel">Notes for $Client</h5>
-        <button class="close" aria-label="Close" type="button" data-dismiss="modal">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div id="client-notes">Client Notes Here</div>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
-        <button class="btn btn-primary" type="button">Save changes</button>
+    <div class="col-lg-2">
+      <h2>Step</h2>
+    </div>
+    <div class="col-lg-2">
+      <h2 class="text-center">Milestone</h2>
+    </div>
+    <div class="col-lg-2">
+      <h2 class="text-center">Date</h2>
+    </div>
+    <div class="col-lg-2">
+      <h2 class="text-center">Notes</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-2">
+      <div class="client-info" id="client">Client</div>
+    </div>
+    <div class="col-lg-2">
+      <select class="drop-info" id="status">
+        <option value="open">open</option>
+        <option value="paused">paused</option>
+        <option value="finished">finished</option>
+      </select>
+    </div>
+    <div class="col-lg-2">
+     
+  <select class="drop-info" id="step">
+    <option value="step-1">Step 1</option>
+    <option value="step-2">Step 2</option>
+    <option value="step-3">Step 3</option>
+    <option value="step-4">Initial SEO</option>
+    <option value="step-5">Maintenance</option>
+  </select>
+    </div>
+    <div class="col-lg-2 text-center">
+      <button type="button" class="btn btn-outline-primary center-block" id="milestone">Milestone</button>
+    </div>
+    <div class="col-lg-2">
+      <div class="client-info" id="date">Date</div>
+    </div>
+    <div class="col-lg-2 text-center">
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#clientInfoModal">Notes</button>
+    </div>
+  </div>
+  <div tabindex="-1" class="modal" id="clientInfoModal" role="dialog" aria-hidden="true" aria-labelledby="clientInfoModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="clientInfoModalLabel">Notes for $Client</h5>
+          <button class="close" aria-label="Close" type="button" data-dismiss="modal"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body">
+          <div id="client-notes">Client Notes Here</div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary" type="button">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </section>
 </body>
 </html>

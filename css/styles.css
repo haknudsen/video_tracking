@@ -1,2 +1,8 @@
 @charset "utf-8";
+.client-info, .drop-info{font-size: 18px}
 .client-info{line-height: 38px}
+.drop-info{margin-top: 6px}
+.btn{margin: 0 auto;width: 110px}
+textarea{width: 100%}
+#description{height: 200px}
+#about,#titles{height: 100px}
