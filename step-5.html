@@ -12,6 +12,7 @@
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/fcce234a54.js"></script>
 </head>
 
 <body>
@@ -39,9 +40,15 @@
     </div>
   </div>
 </section>
-<section class="container">
+<section class="container-fluid">
   <div class="container">
     <form>
+      <div class="form-group row">
+        <label class="col-sm-3 form-control-label text-capitalize" for="keywords">finish date</label>
+        <div class="col-sm-9">
+          <input type="date" id="finish-date"><i class="fa fa-arrow-left" aria-hidden="true"></i><i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      </div>
       <div class="form-group row">
         <label class="col-sm-3 form-control-label text-capitalize" for="keywords">new keywords</label>
         <div class="col-sm-9">
@@ -91,7 +98,7 @@
   </div>
 </section>
 <footer>
-  <nav class="navbar navbar-toggleable-xl navbar-inverse bg-inverse">
+  <nav class="navbar fixed-bottom navbar-toggleable-xl navbar-inverse bg-inverse">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="step-1.htmlnav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
     
     <!-- Brand --> 
